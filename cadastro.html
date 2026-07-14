@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Cartão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-cadastro">
+        <div class="card-cadastro">
+            <h2>📝 Cadastrar Cartão da Família</h2>
+            <p class="descricao">Preencha os dados abaixo para gerar seu cartão digital</p>
+            
+            <form id="form-cadastro">
+                <div class="campo-form">
+                    <label>Nome completo *</label>
+                    <input type="text" id="nome" required placeholder="Ex: Maria de Nazare Pinto de Mesquita">
+                </div>
+                
+                <div class="campo-form">
+                    <label>CPF *</label>
+                    <input type="text" id="cpf" required placeholder="183.757.403-06" maxlength="14">
+                </div>
+                
+                <div class="campo-form">
+                    <label>Data de Nascimento</label>
+                    <input type="date" id="dataNascimento">
+                </div>
+                
+                <div class="campo-form">
+                    <label>Sexo</label>
+                    <select id="sexo">
+                        <option value="">Selecione</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Masculino">Masculino</option>
+                    </select>
+                </div>
+                
+                <div class="campo-form">
+                    <label>Endereço completo *</label>
+                    <input type="text" id="endereco" required placeholder="Rua CINTIA PORTELA, 3435. MATADOURO, Teresina - PI | 64000-300">
+                </div>
+                
+                <div class="campo-form">
+                    <label>Telefone</label>
+                    <input type="text" id="telefone" placeholder="(00) 00000-0000">
+                </div>
+                
+                <div class="campo-form">
+                    <label>Data da última consulta</label>
+                    <input type="date" id="ultimaConsulta">
+                </div>
+                
+                <div class="campo-form">
+                    <label>UBS *</label>
+                    <input type="text" id="ubs" required placeholder="UBS FIOFO DO JUDAS">
+                </div>
+                
+                <div class="campo-form">
+                    <label>Equipe *</label>
+                    <input type="text" id="equipe" required placeholder="ESF 168">
+                </div>
+                
+                <div class="campo-form">
+                    <label>ACS Responsável</label>
+                    <input type="text" id="acs" placeholder="Maria (sua irmã)">
+                </div>
+                
+                <button type="submit" class="botao-cadastrar">✅ Gerar meu cartão</button>
+            </form>
+            
+            <div id="mensagem-erro" class="erro" style="display:none;"></div>
+            <div id="mensagem-carregando" style="display:none;">⏳ Gerando seu cartão...</div>
+            <p class="ajuda">Já tem cadastro? <a href="acessar.html">Clique aqui</a></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

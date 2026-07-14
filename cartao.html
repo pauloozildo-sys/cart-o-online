@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão da Família</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-cartao">
+        <div class="cartao">
+            <!-- CABEÇALHO -->
+            <div class="cabecalho">
+                <div class="titulo-ubs">CARTÃO DA FAMÍLIA DIGITAL</div>
+                <div class="nome-ubs" id="ubs">UBS FIOFO DO JUDAS</div>
+                <div class="equipe" id="equipe">ESF 168</div>
+            </div>
+
+            <!-- FOTO (opcional, depois coloca) -->
+            <div class="foto-container">
+                <img id="foto" src="padrao.png" alt="Foto do paciente">
+            </div>
+
+            <!-- DADOS -->
+            <div class="dados">
+                <div class="campo">
+                    <span class="label">NOME COMPLETO:</span>
+                    <span class="valor" id="nome">---</span>
+                </div>
+                <div class="campo">
+                    <span class="label">CPF:</span>
+                    <span class="valor" id="cpf">---</span>
+                </div>
+                <div class="campo">
+                    <span class="label">SEXO / IDADE:</span>
+                    <span class="valor" id="sexoIdade">---</span>
+                </div>
+                <div class="campo">
+                    <span class="label">ENDEREÇO:</span>
+                    <span class="valor" id="endereco">---</span>
+                </div>
+                <div class="campo">
+                    <span class="label">TELEFONE:</span>
+                    <span class="valor" id="telefone">---</span>
+                </div>
+                <div class="campo">
+                    <span class="label">ACS RESPONSÁVEL:</span>
+                    <span class="valor" id="acs">---</span>
+                </div>
+            </div>
+
+            <!-- ÚLTIMA CONSULTA -->
+            <div class="consultas">
+                <div class="titulo-consultas">📋 ÚLTIMA CONSULTA</div>
+                <div id="ultimaConsulta" style="padding: 10px; text-align: center; font-size: 16px; font-weight: bold; color: #1a5c34;">
+                    ---
+                </div>
+            </div>
+
+            <!-- RODAPÉ -->
+            <div class="rodape">
+                <button onclick="window.location.href='index.html'" class="btn-voltar">
+                    ← Voltar
+                </button>
+                <button onclick="window.print()" class="btn-imprimir">
+                    🖨️ Imprimir
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

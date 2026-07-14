@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessar Cartão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-acessar">
+        <div class="card-acessar">
+            <h2>🔐 Digite sua senha</h2>
+            <p class="descricao">Use os 4 últimos dígitos do seu CPF</p>
+            <form id="form-senha">
+                <input type="password" id="senha" maxlength="4" placeholder="____" autofocus>
+                <button type="submit" class="botao-entrar">Entrar</button>
+            </form>
+            <div id="mensagem-erro" class="erro" style="display:none;">
+                ❌ Senha incorreta. Tente novamente.
+            </div>
+            <div id="mensagem-carregando" style="display:none;">
+                ⏳ Buscando seus dados...
+            </div>
+            <p class="ajuda">Não tem cadastro? <a href="cadastro.html">Crie seu cartão agora</a></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

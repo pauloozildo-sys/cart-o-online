@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ========== ESTILOS GERAIS ========== */
+.container-inicial, .container-acessar, .container-cadastro, .container-cartao {
+    width: 100%;
+    max-width: 450px;
+}
+
+.card-inicial, .card-acessar, .card-cadastro {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* ========== PÁGINA INICIAL ========== */
+.logo .icone {
+    font-size: 60px;
+}
+
+.card-inicial h1 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #1a1a2e;
+}
+
+.subtitulo {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.botao-principal {
+    display: block;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+.botao-principal:hover {
+    opacity: 0.8;
+}
+
+.info-rodape {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* ========== TELA DE SENHA ========== */
+.card-acessar h2 {
+    font-size: 22px;
+    color: #1a1a2e;
+}
+
+.descricao {
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0 30px;
+}
+
+#form-senha {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#senha {
+    padding: 15px;
+    font-size: 28px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    letter-spacing: 8px;
+    font-weight: bold;
+}
+
+.botao-entrar {
+    background: #2980b9;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botao-entrar:hover {
+    background: #1a5276;
+}
+
+/* ========== CADASTRO ========== */
+.card-cadastro {
+    text-align: left;
+}
+
+.card-cadastro h2 {
+    text-align: center;
+}
+
+.campo-form {
+    margin-bottom: 15px;
+}
+
+.campo-form label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.campo-form input, .campo-form select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+.campo-form input:focus, .campo-form select:focus {
+    outline: none;
+    border-color: #2d7d46;
+}
+
+.botao-cadastrar {
+    width: 100%;
+    padding: 14px;
+    background: #2d7d46;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.botao-cadastrar:hover {
+    background: #1e5f34;
+}
+
+.erro {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.ajuda {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+}
+
+.ajuda a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ajuda a:hover {
+    text-decoration: underline;
+}
+
+/* ========== CARTÃO ========== */
+.cartao {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.cabecalho {
+    background: #1a5c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-ubs {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nome-ubs {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.equipe {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.foto-container {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.foto-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #2d7d46;
+}
+
+.dados {
+    padding: 10px 20px;
+}
+
+.campo {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.label {
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.valor {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1a2e;
+    display: block;
+}
+
+.consultas {
+    padding: 15px 20px;
+}
+
+.titulo-consultas {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a5c34;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.btn-voltar, .btn-imprimir {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    flex: 1;
+}
+
+.btn-voltar {
+    background: #ddd;
+    color: #333;
+}
+
+.btn-imprimir {
+    background: #2d7d46;
+    color: white;
+}
+
+.btn-voltar:hover, .btn-imprimir:hover {
+    opacity: 0.8;
+}
+
+@media print {
+    .rodape {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-inicial, .card-acessar, .card-cadastro {
+        padding: 25px 15px;
+    }
+}
