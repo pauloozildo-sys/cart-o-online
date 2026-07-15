@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eaf2f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ========== CONTAINERS ========== */
+.container-inicial, .container-acessar, .container-cadastro, .container-cartao {
+    width: 100%;
+    max-width: 480px;
+}
+
+.card-inicial, .card-acessar, .card-cadastro {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* ========== PÁGINA INICIAL ========== */
+.logo .icone {
+    font-size: 70px;
+}
+
+.card-inicial h1 {
+    font-size: 28px;
+    margin: 20px 0 10px;
+    color: #1a1a2e;
+}
+
+.subtitulo {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.botao-principal {
+    display: block;
+    padding: 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    transition: opacity 0.3s;
+}
+
+.botao-principal:hover {
+    opacity: 0.85;
+}
+
+.info-rodape {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* ========== TELA DE SENHA ========== */
+.card-acessar h2 {
+    font-size: 26px;
+    color: #1a1a2e;
+}
+
+.descricao {
+    color: #555;
+    font-size: 16px;
+    margin: 10px 0 30px;
+}
+
+#form-senha {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#senha {
+    padding: 18px;
+    font-size: 32px;
+    text-align: center;
+    border: 3px solid #bbb;
+    border-radius: 12px;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+.botao-entrar {
+    background: #1a5276;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botao-entrar:hover {
+    background: #154360;
+}
+
+/* ========== CADASTRO ========== */
+.card-cadastro {
+    text-align: left;
+}
+
+.card-cadastro h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.campo-form {
+    margin-bottom: 18px;
+}
+
+.campo-form label {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 5px;
+}
+
+.campo-form input, .campo-form select {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.campo-form input:focus, .campo-form select:focus {
+    outline: none;
+    border-color: #1a5276;
+}
+
+.botao-cadastrar {
+    width: 100%;
+    padding: 16px;
+    background: #1a5276;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.botao-cadastrar:hover {
+    background: #154360;
+}
+
+.erro {
+    color: #c0392b;
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.ajuda {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #555;
+    text-align: center;
+}
+
+.ajuda a {
+    color: #1a5276;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ajuda a:hover {
+    text-decoration: underline;
+}
+
+/* ========== CARTÃO (VERSÃO AZUL E GRANDE) ========== */
+.cartao {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+/* CABEÇALHO - AGORA AZUL E MAIOR */
+.cabecalho {
+    background: #1a5276;
+    color: white;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+.titulo-ubs {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+}
+
+.nome-ubs {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 8px 0 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-break: break-word;
+}
+
+.equipe {
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0.95;
+    letter-spacing: 1px;
+}
+
+/* FOTO */
+.foto-container {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.foto-container img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #1a5276;
+}
+
+/* DADOS - TUDO MAIOR */
+.dados {
+    padding: 10px 24px 20px 24px;
+}
+
+.campo {
+    padding: 12px 0;
+    border-bottom: 2px solid #e8eef2;
+}
+
+.campo:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-size: 13px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+}
+
+.valor {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0e1a2b;
+    display: block;
+    margin-top: 2px;
+    line-height: 1.3;
+    word-break: break-word;
+}
+
+/* ÚLTIMA CONSULTA */
+.consultas {
+    padding: 10px 24px 20px 24px;
+    border-top: 2px solid #e8eef2;
+    margin-top: 5px;
+}
+
+.titulo-consultas {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a5276;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+#ultimaConsulta {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0e1a2b;
+    text-align: center;
+    padding: 10px;
+    background: #f4f9fc;
+    border-radius: 12px;
+}
+
+/* RODAPÉ - SEM IMPRIMIR, SÓ VOLTAR */
+.rodape {
+    display: flex;
+    justify-content: center;
+    padding: 10px 24px 5px 24px;
+}
+
+.btn-voltar {
+    padding: 16px 40px;
+    background: #1a5276;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    max-width: 300px;
+}
+
+.btn-voltar:hover {
+    background: #154360;
+}
+
+/* ========== RESPONSIVO ========== */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .card-inicial, .card-acessar, .card-cadastro {
+        padding: 25px 15px;
+    }
+    .nome-ubs {
+        font-size: 24px;
+    }
+    .equipe {
+        font-size: 18px;
+    }
+    .valor {
+        font-size: 19px;
+    }
+    .btn-voltar {
+        font-size: 16px;
+        padding: 14px 20px;
+    }
+}
